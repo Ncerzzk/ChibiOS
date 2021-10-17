@@ -191,7 +191,7 @@ struct context {
 /* Includes the sub-architecture-specific part.*/
 #if (CORTEX_MODEL == 0) || (CORTEX_MODEL == 1)
 #include "chcore_v6m.h"
-#elif (CORTEX_MODEL == 3) || (CORTEX_MODEL == 4)
+#elif (CORTEX_MODEL == 3) || (CORTEX_MODEL == 4) || (CORTEX_MODEL == 33)   // to compliated with gd32
 #include "chcore_v7m.h"
 #endif
 
